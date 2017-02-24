@@ -5,17 +5,16 @@
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>User</th>
-      <th>Password</th>
+      <th>Nombre</th>
+      <th>Usuario</th>
       <th>Tipo</th>
       <th>Domicilio</th>
-      <th>Rfc</th>
-      <th>Representante</th>
-      <th>Cp</th>
-      <th>Phone</th>
-      <th>Email</th>
-      <th>Curp</th>
+      <th>RFC</th>
+      <th>Representante Legal</th>
+      <th>CP</th>
+      <th>Teléfono</th>
+      <th>Correo</th>
+      <th>CURP</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -25,7 +24,6 @@
       <tr>
         <td><%= cli_sistema.name %></td>
         <td><%= cli_sistema.user %></td>
-        <td><%= cli_sistema.password %></td>
         <td><%= cli_sistema.tipo %></td>
         <td><%= cli_sistema.domicilio %></td>
         <td><%= cli_sistema.RFC %></td>
@@ -34,9 +32,9 @@
         <td><%= cli_sistema.phone %></td>
         <td><%= cli_sistema.email %></td>
         <td><%= cli_sistema.CURP %></td>
-        <td><%= link_to 'Show', cli_sistema %></td>
-        <td><%= link_to 'Edit', edit_cli_sistema_path(cli_sistema) %></td>
-        <td><%= link_to 'Destroy', cli_sistema, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', cli_sistema %></td>
+        <td><%= link_to 'Editar', edit_cli_sistema_path(cli_sistema) %></td>
+        <td><%= link_to 'Borrar', cli_sistema, method: :delete, data: { confirm: '¿Estás seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>

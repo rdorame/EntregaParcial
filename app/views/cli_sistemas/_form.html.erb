@@ -23,12 +23,15 @@
 
   <div class="field">
     <%= f.label :password %>
-    <%= f.text_field :password %>
+    <%= f.password_field :password %>
   </div>
 
   <div class="field">
-    <%= f.label :tipo %>
-    <%= f.text_field :tipo %>
+    <%= f.label :tipo %><br />
+    <%= f.label :tipo, "Física", :value => "Fisica"  %>
+    <%= f.radio_button :tipo, true %>
+    <%= f.label :tipo, "Moral", :value => "Moral" %>
+    <%= f.radio_button :tipo, false, :checked => true %>
   </div>
 
   <div class="field">
@@ -58,7 +61,7 @@
 
   <div class="field">
     <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.email_field :email %>
   </div>
 
   <div class="field">

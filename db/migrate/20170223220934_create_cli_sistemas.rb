@@ -8,8 +8,8 @@ class CreateCliSistemas < ActiveRecord::Migration[5.0]
       t.string :domicilio
       t.string :RFC
       t.string :representante
-      t.string :CP
-      t.integer :phone
+      t.integer :CP
+      t.integer :phone, :limit => 8
       t.string :email
       t.string :CURP
 

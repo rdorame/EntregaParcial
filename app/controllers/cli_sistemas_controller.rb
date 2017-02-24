@@ -69,6 +69,6 @@ class CliSistemasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cli_sistema_params
-      params.require(:cli_sistema).permit(:name, :user, :password, :type, :domicilio, :RFC, :representante, :CP, :phone, :email, :CURP)
+      params.require(:cli_sistema).permit(:name, :user, :password, :tipo, :domicilio, :RFC, :representante, :CP, :phone, :email, :CURP)
     end
 end
