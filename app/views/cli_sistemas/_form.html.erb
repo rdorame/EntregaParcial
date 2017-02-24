@@ -1,0 +1,72 @@
+<%= form_for(cli_sistema) do |f| %>
+  <% if cli_sistema.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(cli_sistema.errors.count, "error") %> prohibited this cli_sistema from being saved:</h2>
+
+      <ul>
+      <% cli_sistema.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user %>
+    <%= f.text_field :user %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tipo %>
+    <%= f.text_field :tipo %>
+  </div>
+
+  <div class="field">
+    <%= f.label :domicilio %>
+    <%= f.text_field :domicilio %>
+  </div>
+
+  <div class="field">
+    <%= f.label :RFC %>
+    <%= f.text_field :RFC %>
+  </div>
+
+  <div class="field">
+    <%= f.label :representante %>
+    <%= f.text_field :representante %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CP %>
+    <%= f.text_field :CP %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone %>
+    <%= f.text_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :CURP %>
+    <%= f.text_field :CURP %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

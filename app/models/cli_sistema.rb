@@ -1,0 +1,2 @@
+class CliSistema < ApplicationRecord
+end
